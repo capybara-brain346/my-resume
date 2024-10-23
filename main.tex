@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+	{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+    	{#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  	\textbf{#1} & \textbf{\small #2} \\
+  	\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  	\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+  	\small#1 & \textbf{\small #4}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	{\Huge \scshape Piyush Choudhari} \\ \vspace{1pt}
+	Pune, Maharastra, India \\ \vspace{1.5pt}
+	\small \raisebox{-0.1\height}\faPhone\ +91 9168088565 ~ \href{mailto:choudhari.piyush@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{choudhari.piyush@gmail.com}} ~
+	\href{https://www.linkedin.com/in/piyush-choudhari/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}
+	\href{https://github.com/capybara-brain346}{\raisebox{-0.2\height}\faGithubSquare \underline{ GitHub}}
+	
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+  	{D.Y.Patil College Of Engineering}{Nov 2022 - June 2026}
+  	{Bachelor of Engineering in A.I.D.S(CGPA of 8.37)} {Pune, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+% 	\resumeSubheading
+%   	{Amazon [Make Sure to add terms like 15 as numbers more] }{Feb 2020 -- June 2020}
+%   	{Software Development Engineer Intern}{Hyderabad, India}
+%   	\resumeItemListStart
+%     	\resumeItem{Created a backend + frontend internal tool to see all the statistics related to the Seller with edit functionality, this allowed us to track who made the changes and when. Adding this feature saved the manual hovering time of the SDE's over DB to find these things. On every task related to this, the SDE was saving on an average \textbf{15 minutes}. }
+%     	\resumeItem{Wrote multiple API's for the team which returned the extracted data from DynamoDB by doing some computations on the basis of business requirement. These API's made the system more feature rich.}
+% 	\resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+	\vspace{-5pt}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+      	{\textbf{Stock News Sentiment Analysis Platform } $|$ \emph{Selenium, Langchain, Ollama, Gemini API Platform} $|$ \href{https://github.com/capybara-brain346/SAP-Stocks}{\textbf{GitHub}}}{Oct 2024}
+      	\resumeItemListStart
+        	\resumeItem{Developed a platform to help users receive a \textbf{sentiment analysis} on a news related to a stock and \textbf{implemented a chatbot} to query that news.}
+        	\resumeItem{Implemented a \textbf{real time data fetching pipeline} to scrape news off of \textbf{60+ different news websites} using \textbf{Selenium} for web scraping. \textbf{Llama 3.2 LLM to parse the relevant news} from the HTML response.}
+            \resumeItem{Created a pipeline to get \textbf{inference on finBERT} text classification model to receive \textbf{“positive”, “negative” or “neutral” classification} on the relevant news.}
+            \resumeItem{Implemented a \textbf{RAG based AI Chatbot} using \textbf{Langchain} and \textbf{ChromaDB} with \textbf{Gemini-1.5-Flash LLM} as base to query fetched news.}
+      	\resumeItemListEnd
+	\vspace{-13pt}
+  	\resumeProjectHeading
+      	{\textbf{RecycleNet18 } $|$ \emph{Pytorch, Streamlit, Ollama, Langchain}  $|$ \href{https://github.com/capybara-brain346/RecycleNet18}{\textbf{GitHub}}}{Feb 2024}
+      	\resumeItemListStart
+        	\resumeItem{Developed a model to classify images of \textbf{recyclable items into 30 different categories}. Used a pretrained \textbf{Resnet18} and trained a \textbf{custom prediction head} consisting of 3 layers.}
+            \resumeItem{Collected data from 2 sources, \textbf{70\% from kaggle and 30\% by web scraping}.}
+            \resumeItem{Obtained \textbf{90\%} training accuracy and \textbf{82\%} testing accuracy.}
+            \resumeItem{\textbf{Integrated a chatbot} to guide the user on exactly how to recycle the classified item in a sustainable way.}
+      	\resumeItemListEnd
+       \vspace{-13pt}
+  	\resumeProjectHeading
+      	{\textbf{Pokedex-API } $|$ \emph{Python, FastAPI, Sqlite3, GitHub Actions}  $|$ \href{https://github.com/capybara-brain346/pokedex-api}{\textbf{GitHub}}}{Jul 2024}
+      	\resumeItemListStart
+        	\resumeItem{Developed a \textbf{RESTful API} to fetch data regarding Pokemons.}
+            \resumeItem{\textbf{Scrapped data} from \href{https://pokemondb.net/}{www.pokemondb.net} and \textbf{data about 1015 pokemons} was scrapped and stored into csv files. Then it was imported into the \textbf{Sqlite3 database for persistence}.}
+            \resumeItem{Uploaded the data to \textbf{Kaggle} as an \textbf{open-source dataset} received \textbf{1100+} downloads and \textbf{5000+} views. \href{https://www.kaggle.com/datasets/crinklybrain2003/pokmon-base-stats-dataset}{Dataset}}
+            \resumeItem{Used \textbf{FastAPI} to create a server. The routes enable the clients to query the data by \textbf{name, species, size, type, abilities and base combat stats}.}
+            \resumeItem{Configured \textbf{GitHub actions workflows} to automate linting using \textbf{Pylint} and building the app inside a container.}
+      	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------Achievements-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\resumeItemListStart
+    	\resumeItem{1st Rank In Software Category At SIH Internal College Hackathon}
+    	\resumeItem{2nd Rank At ISA, DYPCOE Data Visualizaion Hackathon}
+    	\resumeItem{4th Rant At Vishwakarma University Techfest Hackathon}
+    	
+  	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %
+%-----------Profile Links-----------
+\section{Profile Links}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\resumeItemListStart
+    	\resumeItem {\href{https://github.com/capybara-brain346}{GitHub}}
+    	\resumeItem {\href{https://leetcode.com/u/crinklybrain2003/}{LeetCode}}
+    	\resumeItem {\href{https://www.geeksforgeeks.org/user/choudharuspi/}{GeeksforGeeks}}
+        \resumeItem {\href{https://www.hackerrank.com/profile/choudhari_piyush}{Hackerrank}}
+  	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	\textbf{Languages}{: Python, Java, SQL} \\
+	\textbf{API Development}{: FastAPI, Flask, Spring Boot, Postman, Insomnia} \\
+	\textbf{Data Analytics}{: Excel, PowerBI, Tableau} \\
+	\textbf{Databases}{: Sqlite3, PostgreSQL, MySql} \\
+	\textbf{CI/CD}{: GitHub Actions, Docker, Render, Vercel} \\
+	\textbf{Version Control}{: Git, GitHub} \\
+	}}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+\end{document}
+
+
